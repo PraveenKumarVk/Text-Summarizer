@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='default.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='templatemo-style.css') }}">
+	<!-- google web font css -->
+	  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+<!-- navigation -->
+
+	<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="" style="color: aliceblue;">lazy learners</a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{{ url_for('home') }}" class="active">HOME</a></li>
+				<li><a href="{{ url_for('textsum') }}">TEXT SUMMARIZER</a></li>
+				<li><a href="{{ url_for('docsum') }}">WIKIPEDIA SUMMARIZER</a></li>
+				<li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<!-- home section -->
+<div id="home" style="background-image: url( {{ url_for('static',filename='intro.png') }} )">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-3"></div>
+
+			<p class="titles2"></p>
+			<p class="titles">TEXT SUMMARIZATION</p>
+
+			<div class="col-md-7 col-sm-9">
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="divider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-one">
+
+					<h2>What is Text Summarization?</h2>
+					<p class="f1">Text summarization refers to the technique of shortening long pieces of text. The intention is to create a coherent and fluent summary having only the main points outlined in the document.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-two">
+
+					<h2>What is Extractive Summarization?</h2>
+					<p class="f2">The extractive text summarization technique involves pulling keyphrases from the source document and combining them to make a summary. The extraction is made according to the defined metric without making any changes to the texts.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="divider-wrapper divider-three">
+
+					<h2>What is Abstractive Summarization?</h2>
+					<p class="f3">The abstractive text summarization creates new phrases and sentences that relay the most useful information from the original text — just like humans do.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- about section -->
+<div id="about" style="margin-bottom: 30px">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 about-des">
+				<p class="sample">Sample Text:</p>
+				<p class="sample1">Long ago, there lived a little boy named Sammy. He was a good boy. He was good in his studies, obedient to his parents, more intelligent than many other boys in his class and kind to everyone. Grown-ups as well as those junior to Sammy loved him very much. But that aroused jealousy in many other boys who longed to be as loved as Sammy.Now there was another boy named Timmy who studied in the same class as Sammy. Unlike Sammy, he was not good at studies and always liked to play during school hours. He misbehaved with his parents, bullied his classmates and even ill-treated Sammy. He always tried to put Sammy down and belittled him before other kids in the class. But no matter what he did, Sammy's grades kept getting better and better. Whether in studies or in sports or from his classmates, Sammy kept getting accolades from everywhere.On his eighth birthday, Sammy got a nice pen as a gift from his parents. He brought it to school so that he could use it to take down the notes of the lectures that the teachers gave in class. This was a very beautiful pen and it could help one write very fast. When Timmy saw it, he was very jealous of Sammy. He asked Sammy,'Hey, where did you get that? Did you buy it?''My parents gave it as a birthday gift to me.' replied Sammy.Timmy was overwhelmed with anger and jealousy. The bad boy that he was, he rarely got any present from his parents. He decided to steal Sammy's pen. During recess, when everyone had gone out from the class, Timmy opened Sammy's bag and took out his pen. Then he hid it inside his bag and went out to have his tiffin.When Sammy came back and could not find his pen, he informed his class teacher about it. There was a hunt for the missing pen and the class teacher ordered the class monitor to search the bag of every children inside the class. The missing pen was soon found out of Timmy's bag and the furious teacher asked the errant boy,'Now Timmy, what do you have to say about it?'Timmy was in tears. He had nothing to say.When Sammy saw Timmy cry, he took pity on the boy. The kind boy that he was, he had no ill-feeling against his classmate. He requested his class teacher not to take any action against Timmy, now that his stolen pen was found.This opened Timmy's eyes. He could now see what a good boy Sammy was. He asked for forgiveness from his teacher and Sammy. From that day, he became friends with Sammy and gradually changed himself to be as good as Sammy. Everyone began to love Timmy and Sammy was proud of his new friend.Despite being hurt by Timmy, Sammy gave him back only love in return. This is how we should also treat our enemies. Who knows? One day, our behaviour may just change themselves for the better.</p>
+			</div>
+			<div class="col-md-6 col-sm-12 about-des">
+				<p class="summary">Summarized Text:</p>
+				<p class="summary1">He was good in his studies, obedient to his parents, more intelligent than many other boys in his class and kind to everyone.But that aroused jealousy in many other boys who longed to be as loved as Sammy.Now there was another boy named Timmy who studied in the same class as Sammy.He brought it to school so that he could use it to take down the notes of the lectures that the teachers gave in class.Then he hid it inside his bag and went out to have his tiffin.When Sammy came back and could not find his pen, he informed his class teacher about it.There was a hunt for the missing pen and the class teacher ordered the class monitor to search the bag of every children inside the class.</p>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- portfolio section -->
+
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 col-sm-4">
+
+
+				<p>Phone:123456789</p>
+				<p>E-Mail: text@summarization.com</p>
+                <p>Website: www.lazylearners.com</p>
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+</footer>
+
+<!-- copyright section -->
+<div class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<p>Copyright © 2021</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<!-- javascript js -->	
+<script src="{{ url_for('static',filename='jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename='nivo-lightbox.min.js') }}"></script>
+<script src="{{ url_for('static',filename='custom.js') }}"></script>
+
+</body>
+</html>
